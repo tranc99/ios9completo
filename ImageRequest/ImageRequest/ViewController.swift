@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let imageUrl = NSURL(
         // TODO: Add all the networking code here!
     }
 }
