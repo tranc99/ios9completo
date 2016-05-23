@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imageUrl = NSURL(
-        // TODO: Add all the networking code here!
+        let imageUrl = NSURL(string: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg")!
+        NSURLSession.sharedSession().dataTaskWithURL(imageUrl) { (data, response, error) in
+            print("task finished")
+        }
     }
 }
